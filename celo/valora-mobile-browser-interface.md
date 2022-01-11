@@ -2,7 +2,7 @@
 
 This article is meant to show how you can write a small web app that you can use to connect to your mobile Valora wallet
 You can use your laptop or mobile browser to connect to Valora wallet installed on your iPhone or Android phone.
-This tutorial shows you how you can use @walletconnect/web3-provider and @celo/contractkit to read Account address, CELO and cUSD balances.
+This tutorial shows you how you can use *@walletconnect/web3-provider* and *@celo/contractkit* to read Account address, CELO and cUSD balances.
 
 ## Why do people use Valora
 
@@ -61,7 +61,7 @@ Click on **Run in Web Browser** item on the left to launch the valora app
 The web app workflow is very simple. 
 1. When page is loaded a "Connect" button is displayed.
  
-   ```
+   ```jsx
    //Connect functionality: valora/App.js
 
      connect = async() => {
@@ -87,7 +87,7 @@ The web app workflow is very simple.
         this.setState({provider, kit, cUsdBalance, goldBalance});
    }
    
-   ```
+   ```jsx
    ![Test Image 3](https://github.com/mirceac/valora/blob/master/images/valoraConnect.png)
    
 2. When user clicks the button, a Wallet QR connection screen is displayed
@@ -102,10 +102,16 @@ The web app workflow is very simple.
    Clicking Back button will keep the connection in browser.
    Clicking Disconnect will close wallet connection
    
-   ```
+   ```jsx
      //Disconnect functionality: valora/App.js
      disconnect = async() => {
        await provider.disconnect();
        this.setState({provider:null, kit: null});
      }
-   ```
+   ```jsx
+
+# Conclusion
+This simple and straightforward example shows you the benefit of web3 api's and how easily an web app can be integrated with modern wallets and blockchain based tools
+
+# References
+https://docs.celo.org/developer-resources/walkthroughs/valora-wc-v1
