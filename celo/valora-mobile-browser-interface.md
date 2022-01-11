@@ -28,7 +28,7 @@ nvm install v17.3.0
 nvm use 17.3.0
 ```
 
-#Project install & execution 
+# Project install & execution 
 
 Clone the project (tested with node v17.3.0)
 ```
@@ -48,8 +48,15 @@ Start the application
 ```
 expo start
 ```
+![Test Image1](https://github.com/mirceac/valora/blob/master/images/startApp.png)
 
-#Application workflow
+Opening your browser you will see the following screen
+
+![Test Image2](https://github.com/mirceac/valora/blob/master/images/RunInBrowser.png)
+
+Click on **Run in Web Browser** item on the left to launch the valora app
+
+# Application workflow
 
 The web app workflow is very simple. 
 1. When page is loaded a "Connect" button is displayed.
@@ -81,12 +88,19 @@ The web app workflow is very simple.
    }
    
    ```
+   ![Test Image 3](https://github.com/mirceac/valora/blob/master/images/valoraConnect.png)
+   
 2. When user clicks the button, a Wallet QR connection screen is displayed
+   ![Test Image 4](https://github.com/mirceac/valora/blob/master/images/valoraQR.png)
+   
 3. Use the QR code to connect to Valora mobile wallet installed on your phone
-4. Valora account address, Celo and cUSD balances are displayed. 
+
+4. Valora account address, Celo and cUSD balances are displayed.
+   
+   ![Test Image 5](https://github.com/mirceac/valora/blob/master/images/valoraData.png) 
+   
    Clicking Back button will keep the connection in browser.
    Clicking Disconnect will close wallet connection
-   
    
    ```
      //Disconnect functionality: valora/App.js
