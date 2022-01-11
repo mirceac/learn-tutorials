@@ -87,7 +87,7 @@ The web app workflow is very simple.
         this.setState({provider, kit, cUsdBalance, goldBalance});
    }
    
-   ```jsx
+   ```
    ![Test Image 3](https://github.com/mirceac/valora/blob/master/images/valoraConnect.png)
    
 2. When user clicks the button, a Wallet QR connection screen is displayed
@@ -108,10 +108,10 @@ The web app workflow is very simple.
        await provider.disconnect();
        this.setState({provider:null, kit: null});
      }
-   ```jsx
+   ```
 
 # Conclusion
-This simple and straightforward example shows you the benefit of web3 api's and how easily an web app can be integrated with modern wallets and blockchain based tools
+This simple and straightforward example, shows you the benefit of web3 api's and how easily, a web app can be integrated with modern wallets and blockchain based tools
 
 # References
 https://docs.celo.org/developer-resources/walkthroughs/valora-wc-v1
